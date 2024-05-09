@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <form method="post">
+        {% csrf_token %}
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="pno">Pno</label>
+        <input type="text" id="pno" name="pno" /><br /><br />
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="add">Address</label>
+        <input type="text" id="add" name="add" /><br /><br />
+        <label for="gender">Gender</label>
+
+        <input type="radio" id="gender" name="gender" value="Male" />Male
+        <input
+          type="radio"
+          id="gender"
+          name="gender"
+          value="Female"
+        />Female<br /><br />
+        <input type="checkbox" name="course" id="course" value="Python" />Python
+        <input type="checkbox" name="course" id="course" value="Java" />Java
+        <input
+          type="checkbox"
+          name="course"
+          id="course"
+          value="Testing"
+        />Testing
+        <input type="checkbox" name="course" id="course" value="Mern" />Mern
+        <br /><br />
+        <label for="un">Username</label>
+        <input type="text" id="un" name="un" /><br /><br />
+        <label for="pw">Password</label>
+        <input type="text" id="pw" name="pw" /><br /><br />
+        <input type="submit" value="Register" /><br /><br />
+      </form>
+    </center>
+  </body>
+</html>
