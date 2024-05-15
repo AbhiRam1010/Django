@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      {% for co in CO %} name:-{{co.name}} <br />
+      <img src="{{co.profile.url}}" alt="" />
+      {% endfor %}{{CO.name}}
+    </center>
+  </body>
+</html>
