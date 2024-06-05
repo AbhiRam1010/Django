@@ -2,6 +2,10 @@
 {% block title %}user_regitration{% endblock title %}
 {% block body %}
 <center>
-HII Welcome
+<form  method="post">
+{% csrf_token %}
+{{EUFO.as_p}}
+<input type="submit" value="Register">
+</form>
 </center>
 {% endblock body %}

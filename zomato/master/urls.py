@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from django.conf.urls.static import static
+from django.conf import settings
+from .views import *
 urlpatterns = [
-    
-]
+    path('masrter_registration',masrter_registration,name='masrter_registration'),
+    path('add_item',add_item,name="add_item"),
+    path('master_login',master_login,name='master_login'),
+    path('user_logout', user_logout, name='user_logout')
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
